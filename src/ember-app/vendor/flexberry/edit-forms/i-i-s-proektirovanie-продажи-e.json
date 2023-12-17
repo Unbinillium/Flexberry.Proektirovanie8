@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Номенклатура",
+      "projection": "НоменклатураL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиент",
+      "projection": "КлиентL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Продажи",
+  "name": "IISProektirovanie_ПродажиE",
+  "className": "ПродажиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proektirovanie-продажи",
+      "modelProjection": "ПродажиE"
+    }
+  ]
+}

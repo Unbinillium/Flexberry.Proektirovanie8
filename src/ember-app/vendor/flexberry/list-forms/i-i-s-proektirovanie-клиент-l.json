@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proektirovanie-клиент-e",
+  "editForm": "i-i-s-proektirovanie-клиент-e",
+  "external": false,
+  "caption": "Клиент",
+  "name": "IISProektirovanie_КлиентL",
+  "className": "КлиентL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proektirovanie-клиент",
+      "modelProjection": "КлиентL"
+    }
+  ]
+}

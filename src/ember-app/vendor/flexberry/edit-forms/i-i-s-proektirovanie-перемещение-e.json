@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Номенклатура",
+      "projection": "НоменклатураL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Поставщик",
+      "projection": "ПоставщикL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Перемещение",
+  "name": "IISProektirovanie_ПеремещениеE",
+  "className": "ПеремещениеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proektirovanie-перемещение",
+      "modelProjection": "ПеремещениеE"
+    }
+  ]
+}

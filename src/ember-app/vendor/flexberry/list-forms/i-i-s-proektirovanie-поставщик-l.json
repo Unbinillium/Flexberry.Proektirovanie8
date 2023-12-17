@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proektirovanie-поставщик-e",
+  "editForm": "i-i-s-proektirovanie-поставщик-e",
+  "external": false,
+  "caption": "Поставщик",
+  "name": "IISProektirovanie_ПоставщикL",
+  "className": "ПоставщикL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proektirovanie-поставщик",
+      "modelProjection": "ПоставщикL"
+    }
+  ]
+}

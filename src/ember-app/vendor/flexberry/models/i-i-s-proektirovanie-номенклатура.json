@@ -1,0 +1,143 @@
+﻿{
+  "name": "IISProektirovanie_Номенклатура",
+  "modelName": "i-i-s-proektirovanie-номенклатура",
+  "className": "Номенклатура",
+  "nameSpace": "IIS.Proektirovanie_",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "едИзм",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "защСвойства",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "имяТовара",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "экоКласс",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "готТовар",
+      "relatedTo": "i-i-s-proektirovanie-гот-товар",
+      "inverse": "номенклатура"
+    },
+    {
+      "name": "запасМатериалов",
+      "relatedTo": "i-i-s-proektirovanie-запас-материалов",
+      "inverse": "номенклатура"
+    }
+  ],
+  "projections": [
+    {
+      "name": "НоменклатураE",
+      "modelName": "i-i-s-proektirovanie-номенклатура",
+      "attrs": [
+        {
+          "name": "имяТовара",
+          "caption": "Имя товара",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "едИзм",
+          "caption": "Ед изм",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "экоКласс",
+          "caption": "Эко класс",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "защСвойства",
+          "caption": "Защ свойства",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ГотТоварE",
+          "caption": "Гот товар",
+          "name": "готТовар",
+          "relatedTo": "i-i-s-proektirovanie-гот-товар",
+          "inverse": null
+        },
+        {
+          "projectionName": "ЗапасМатериаловE",
+          "caption": "Запас материалов",
+          "name": "запасМатериалов",
+          "relatedTo": "i-i-s-proektirovanie-запас-материалов",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "НоменклатураL",
+      "modelName": "i-i-s-proektirovanie-номенклатура",
+      "attrs": [
+        {
+          "name": "имяТовара",
+          "caption": "Имя товара",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "едИзм",
+          "caption": "Ед изм",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "экоКласс",
+          "caption": "Эко класс",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "защСвойства",
+          "caption": "Защ свойства",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

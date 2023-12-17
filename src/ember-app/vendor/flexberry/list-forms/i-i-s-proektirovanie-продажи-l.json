@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proektirovanie-продажи-e",
+  "editForm": "i-i-s-proektirovanie-продажи-e",
+  "external": false,
+  "caption": "Продажи",
+  "name": "IISProektirovanie_ПродажиL",
+  "className": "ПродажиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proektirovanie-продажи",
+      "modelProjection": "ПродажиL"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+<h3 class="ui header">{{t "forms.i-i-s-proektirovanie-номенклатура-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.имяТовара
+      class=(if (v-get validationModel "имяТовара" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie-номенклатура-e.имяТовара-caption")
+      data-test-i-i-s-proektirovanie-номенклатура-e-имяТовара=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "имяТовара" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.едИзм
+      class=(if (v-get validationModel "едИзм" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie-номенклатура-e.едИзм-caption")
+      data-test-i-i-s-proektirovanie-номенклатура-e-едИзм=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "едИзм" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.экоКласс
+      class=(if (v-get validationModel "экоКласс" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie-номенклатура-e.экоКласс-caption")
+      data-test-i-i-s-proektirovanie-номенклатура-e-экоКласс=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "экоКласс" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.защСвойства
+      class=(if (v-get validationModel "защСвойства" "isInvalid") "error")
+      label=(t "forms.i-i-s-proektirovanie-номенклатура-e.защСвойства-caption")
+      data-test-i-i-s-proektirovanie-номенклатура-e-защСвойства=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "защСвойства" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proektirovanie-номенклатура-e.готТовар-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="готТоварGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.готТовар
+      content=model.готТовар
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "готТовар" "isInvalid") "error")
+      data-test-i-i-s-proektirovanie-номенклатура-e-готТовар=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "готТовар" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proektirovanie-номенклатура-e.запасМатериалов-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="запасМатериаловGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.запасМатериалов
+      content=model.запасМатериалов
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "запасМатериалов" "isInvalid") "error")
+      data-test-i-i-s-proektirovanie-номенклатура-e-запасМатериалов=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "запасМатериалов" "message")}}
+  </div>
+</form>

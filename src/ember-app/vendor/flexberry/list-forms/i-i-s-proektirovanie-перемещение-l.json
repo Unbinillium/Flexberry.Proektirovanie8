@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proektirovanie-перемещение-e",
+  "editForm": "i-i-s-proektirovanie-перемещение-e",
+  "external": false,
+  "caption": "Перемещение",
+  "name": "IISProektirovanie_ПеремещениеL",
+  "className": "ПеремещениеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proektirovanie-перемещение",
+      "modelProjection": "ПеремещениеL"
+    }
+  ]
+}
